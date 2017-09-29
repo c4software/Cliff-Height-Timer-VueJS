@@ -7,7 +7,8 @@ const messages = {
     title: 'Cliff Height Timer',
     openMenu: 'Open Menu',
     drawer: {
-      home: "Home"
+      home: "Home",
+      about: "About"
     },
     see_on_github: "See On Github"
   },
@@ -15,7 +16,8 @@ const messages = {
     title: "Cliff Height Timer",
     openMenu: 'Ouvrir le Menu',
     drawer: {
-      home: "Accueil"
+      home: "Accueil",
+      about: "À propos"
     },
     see_on_github: "Voir sur Github"
   }
