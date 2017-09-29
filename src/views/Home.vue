@@ -1,32 +1,28 @@
 <template>
-  <div class="middle-centered">
+  <div class="middle-centered deep-purple lighten-1">
     <div class="home">
-      <h4>{{$t("title")}}</h4>
-      <v-btn @click.stop="openMenu">{{$t("openMenu")}}</v-btn>
+
     </div>
+
+    <v-fab-transition>
+      <v-btn v-bind:class="[isRunning?'red':'green']" dark fixed bottom right fab>
+        <v-icon>play_arrow</v-icon>
+      </v-btn>
+    </v-fab-transition>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home',
-  methods: {
-    openMenu: () => {
-      // When user tap the button dispatch an event into the dom.
-      // Its will trigger the drawer Open event in (componnents/Drawer.vue)
-      document.dispatchEvent(new CustomEvent("toggleDrawer", {}));
+    name: 'home',
+    data: () => {
+        return {isRunning: false}
     }
-  }
 }
 </script>
 
 <style scoped>
   .home{
     text-align: center;
-  }
-  img.logo{
-    display: inline;
-    width: 90px;
-    padding: 10px;
   }
 </style>
