@@ -1,7 +1,9 @@
 <template>
   <div class="middle-centered deep-purple lighten-1">
     <div class="home">
-
+      <h1>{{ time }} s</h1>
+      <h3>{{ m }} m</h3>
+      <h3>{{ ft }} ft</h3>
     </div>
 
     <v-fab-transition>
@@ -43,14 +45,12 @@ export default {
         action(){
             this.start = new Date().getTime();
 
-            if (this.running === false){
-                console.log("Start");
+            if (!this.running){
                 this.running = true;
                 this.timerId = setInterval(() => {
                     this.compute();
                 }, 10);
             }else{
-                console.log("Stop");
                 this.running = false;
                 clearInterval(this.timerId);
             }
@@ -75,5 +75,8 @@ export default {
 <style scoped>
   .home{
     text-align: center;
+  }
+  .home > h1, .home > h2, .home > h3 {
+    color: white;
   }
 </style>
