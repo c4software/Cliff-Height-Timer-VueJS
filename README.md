@@ -19,7 +19,3 @@ npm install
 ```
 npm run dev
 ```
-
-# Cordova Packaging
-
-TODO
