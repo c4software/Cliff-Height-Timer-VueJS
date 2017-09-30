@@ -2,6 +2,7 @@
 
 « VueJS » version of the Cliff-Height-Timer
 
+![Démo](demo.png);
 
 # Presentation
 
