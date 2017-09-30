@@ -18,8 +18,11 @@
 <script>
     export default {
         name: 'history',
-        data: function(){
-            return {"history":[]}
+        computed: {
+          history(){
+              let history = JSON.parse(localStorage.getItem("history"));
+              return !Array.isArray(history)?[]:history;
+          }
         },
         methods:{
             display_history(item){

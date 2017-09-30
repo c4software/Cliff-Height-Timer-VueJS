@@ -53,8 +53,17 @@ export default {
             }else{
                 this.running = false;
                 clearInterval(this.timerId);
+                this.saveHistory({time: this.time,m: this.m,ft: this.ft});
             }
 
+        },
+        saveHistory(item){
+          let history = JSON.parse(localStorage.getItem("history"));
+          if (!Array.isArray(history)){
+            history = [];
+          }
+          history.push(item);
+          localStorage.setItem("history", JSON.stringify(history));
         },
         compute(){
             let fallTime = new Date().getTime() - this.start;
