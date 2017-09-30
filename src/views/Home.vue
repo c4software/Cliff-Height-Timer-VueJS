@@ -62,7 +62,7 @@ export default {
           if (!Array.isArray(history)){
             history = [];
           }
-          history.push(item);
+          history.unshift(item);
           localStorage.setItem("history", JSON.stringify(history));
         },
         compute(){
