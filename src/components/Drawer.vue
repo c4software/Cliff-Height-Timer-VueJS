@@ -26,6 +26,7 @@ export default {
     return {
       items: [
         { icon: 'home', text: this.$t("drawer.home"), action: '#/' },
+        { icon: 'history', text: this.$t("drawer.history"), action: '#/history' },
         { icon: 'help', text: this.$t("drawer.about"), action: '#/about' },
         { divider: true },
         { icon: 'pets', text: this.$t('see_on_github'), action: 'https://github.com/c4software/Cliff-Height-Timer-VueJS' },
