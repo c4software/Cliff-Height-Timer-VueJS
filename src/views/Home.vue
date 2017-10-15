@@ -6,11 +6,9 @@
       <h3>{{ ft }} ft</h3>
     </div>
 
-    <v-fab-transition>
-      <v-btn v-on:click="action" v-bind:class="state_class" dark fixed bottom right fab>
+    <v-btn v-on:click="action" v-bind:class="state_class" dark fixed bottom right fab>
         <v-icon>{{ state_icon }}</v-icon>
-      </v-btn>
-    </v-fab-transition>
+    </v-btn>
   </div>
 </template>
 
