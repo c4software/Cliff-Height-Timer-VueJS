@@ -1,5 +1,5 @@
 <template>
-  <div class="middle-centered deep-purple lighten-1">
+  <v-container class="middle-centered deep-purple lighten-1">
     <div class="home">
       <h1>{{ time }} s</h1>
       <h3>{{ m }} m</h3>
@@ -9,7 +9,7 @@
     <v-btn v-on:click="action" v-bind:class="state_class" dark fixed bottom right fab>
         <v-icon>{{ state_icon }}</v-icon>
     </v-btn>
-  </div>
+  </v-container>
 </template>
 
 <script>
