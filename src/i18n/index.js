@@ -44,11 +44,7 @@ const messages = {
 };
 
 
-export const i18n = new VueI18n({
-    locale: getLanguage(),
-    fallbackLocale: 'en',
-    messages
-});
+export const i18n = new VueI18n({locale: getLanguage(), fallbackLocale: 'en', messages});
 
 function getLanguage() {
     try {
