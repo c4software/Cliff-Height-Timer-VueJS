@@ -1,5 +1,5 @@
-import VueI18n from 'vue-i18n'
 import Vue from 'vue'
+import VueI18n from 'vue-i18n'
 Vue.use(VueI18n);
 
 const messages = {
@@ -47,7 +47,7 @@ const messages = {
 export const i18n = new VueI18n({
     locale: getLanguage(),
     fallbackLocale: 'en',
-    messages,
+    messages
 });
 
 function getLanguage() {
