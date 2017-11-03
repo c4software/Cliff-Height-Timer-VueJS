@@ -1,4 +1,4 @@
-# [WIP] Cliff-Height-Timer-VueJS
+# Cliff-Height-Timer-VueJS
 
 « VueJS » version of the Cliff-Height-Timer
 
