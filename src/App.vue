@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import myToolbar from "@/components/MyToolbar"
+import myToolbar from '@/components/MyToolbar'
 
 export default {
   name: 'app',

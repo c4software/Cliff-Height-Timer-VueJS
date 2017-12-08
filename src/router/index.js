@@ -4,7 +4,7 @@ import Home from '@/views/Home'
 import About from '@/views/About'
 import History from '@/views/History'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [

@@ -11,19 +11,19 @@
 </template>
 
 <script>
-import myContentDrawer from "@/components/Drawer"
+import myContentDrawer from '@/components/Drawer'
 
 export default {
-  name: "myToolbar",
+  name: 'myToolbar',
   components: {myContentDrawer},
-  data: function() {
+  data: function () {
     return {
       drawer: false
     }
   },
   methods: {
-    goHome (){
-      window.location.hash = "/";
+    goHome () {
+      window.location.hash = '/'
     }
   }
 }

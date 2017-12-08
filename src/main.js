@@ -3,25 +3,23 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import {i18n} from './i18n'
+import Vuetify from 'vuetify'
 
-Vue.config.productionTip = true;
+Vue.config.productionTip = true
 
 // Vuetify
-require('vuetify/dist/vuetify.min.css');
-import Vuetify from 'vuetify'
-Vue.use(Vuetify);
-
-// i18n
-import {i18n} from './i18n'
+require('vuetify/dist/vuetify.min.css')
+Vue.use(Vuetify)
 
 const init = () => {
-  new Vue({
+  return new Vue({
     el: '#app',
     router,
     i18n,
     template: '<App/>',
     components: { App }
-  });
-};
+  })
+}
 
-init();
+init()
