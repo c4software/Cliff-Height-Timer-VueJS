@@ -20,8 +20,8 @@
         name: 'history',
         computed: {
           history () {
-              let history = JSON.parse(localStorage.getItem("history"))
-              return !Array.isArray(history)?[]:history
+            let history = JSON.parse(localStorage.getItem("history"))
+            return !Array.isArray(history)?[]:history
           }
         }
     }
