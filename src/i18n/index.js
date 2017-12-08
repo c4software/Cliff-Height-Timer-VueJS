@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
-Vue.use(VueI18n);
+Vue.use(VueI18n)
 
 const messages = {
     en: {
@@ -48,14 +48,13 @@ export const i18n = new VueI18n({
     locale: getLanguage(),
     fallbackLocale: 'en',
     messages
-});
+})
 
 function getLanguage() {
     try {
-        let l = navigator.language.split("-");
-        return l[0];
+        let l = navigator.language.split('-')
+        return l[0]
     }catch(err){
-        console.log(err);
-        return navigator.language;
+        return navigator.language
     }
 }
