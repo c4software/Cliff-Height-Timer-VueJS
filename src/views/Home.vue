@@ -1,5 +1,5 @@
 <template>
-  <v-container class="middle-centered deep-purple lighten-1">
+  <v-container fill-height class="middle-centered deep-purple lighten-1">
     <div class="home">
       <h1>{{ time }} s</h1>
       <h3>{{ m }} m</h3>

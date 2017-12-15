@@ -1,9 +1,10 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" temporary>
+    <v-navigation-drawer v-model="drawer" clipped fixed app>
       <myContentDrawer />
     </v-navigation-drawer>
-    <v-toolbar class="primary deep-purple" fixed >
+
+    <v-toolbar class="deep-purple" clipped-left app>
       <v-toolbar-side-icon dark @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title @click="goHome" class="white--text">{{ $t("title") }}</v-toolbar-title>
     </v-toolbar>
