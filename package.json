@@ -1,7 +1,7 @@
 {
   "name": "cliff-height-timer-vuejs",
   "version": "1.0.0",
-  "description": "Exemple VueJS",
+  "description": "« VueJS » version of the Cliff-Height-Timer",
   "author": "Valentin Brosseau <c4software@gmail.com>",
   "private": true,
   "scripts": {
