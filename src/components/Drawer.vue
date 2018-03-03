@@ -1,6 +1,5 @@
 <template>
   <div>
-    <v-toolbar class="deep-purple" />
     <v-list dense>
       <template v-for="(item, i) in items">
         <v-divider dark v-if="item.divider" :key="i"></v-divider>
