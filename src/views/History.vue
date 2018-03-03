@@ -1,8 +1,8 @@
 <template>
-  <v-container fluid>
+  <v-container>
     <v-list v-if="history.length > 0">
       <v-subheader>{{ $t("history.title") }}</v-subheader>
-      <v-list-tile v-for="item in history" v-bind:key="item.time">
+      <v-list-tile v-for="(item,i) in history" v-bind:key="i">
         <v-list-tile-content>
           <v-list-tile-title>{{item.time}}s</v-list-tile-title>
           <v-list-tile-sub-title>{{item.m}}m, {{item.ft}}ft</v-list-tile-sub-title>

@@ -1,8 +1,8 @@
 <template>
-  <v-app toolbar fill-height>
+  <v-app toolbar>
     <myToolbar />
     <v-content>
-      <v-container pa-0 fill-height fluid>
+      <v-container pa-0 fluid>
         <router-view></router-view>
       </v-container>
     </v-content>

@@ -1,5 +1,5 @@
 <template>
-  <v-container fill-height class="middle-centered deep-purple lighten-1" fluid>
+  <v-container deep-purple align-center align-content-center lighten-1 fluid id="home-container">
     <div class="home">
       <h1>{{ time }} s</h1>
       <h3>{{ m }} m</h3>
@@ -83,8 +83,15 @@
 </script>
 
 <style scoped>
-  .home{
+  #home-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
     text-align: center;
+  }
+  .home{
+    width: 100%;
   }
   .home > h1, .home > h2, .home > h3 {
     color: white;
