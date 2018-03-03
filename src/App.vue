@@ -2,7 +2,7 @@
   <v-app toolbar fill-height>
     <myToolbar />
     <v-content>
-      <v-container pa-0 fill-height>
+      <v-container pa-0 fill-height fluid>
         <router-view></router-view>
       </v-container>
     </v-content>
