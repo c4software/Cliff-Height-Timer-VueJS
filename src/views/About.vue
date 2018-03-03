@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container fluid>
         <h2>{{ $t("about.title") }}</h2>
         <p>{{ $t("about.p1") }}</p>
         <p>{{ $t("about.p2") }}</p>

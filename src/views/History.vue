@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-list v-if="history.length > 0">
       <v-subheader>{{ $t("history.title") }}</v-subheader>
       <v-list-tile v-for="(item,i) in history" v-bind:key="i">
